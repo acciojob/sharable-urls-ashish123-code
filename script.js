@@ -1,7 +1,7 @@
 // your code here
 function handelSubmit(event){
           event.preventDefault();
-          var h3Value="https://localhost:8080/";
+          var h3Value='https://localhost:8080';
           var name=nameElement.value;
           var year =yearElement.value;
 
@@ -12,5 +12,5 @@ function handelSubmit(event){
           }else if(!name && year){
             h3Value+="?year="+year;
           }
-          h3Value.textContent=h3Value;
+          h3.textContent=h3Value;
         }
